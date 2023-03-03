@@ -1,3 +1,11 @@
+#
+#
+# Giuseppe Stecca
+# giuseppe.stecca@iasi.cnr.it
+# Code for paper "A bi-objective model to schedule green investment in a two-stage supply chain"
+# the code will run if the instance file "Instanceanor.xlsx" is located in the same folder of this file and a subfolder named results is created
+#
+
 import gurobipy as gb
 import itertools
 import numpy as np
@@ -521,7 +529,7 @@ if __name__=="__main__":
     modeltypes = {"LB1" : 1, "LB2" : 2, "NLMODEL" : 3, "LOADLB" : 4, "UB" : 5, "VerifyUB" : 6, "HEURISTIC" : 7}
     MODELTYPE = modeltypes[modelTypeString]
 
-    dfi = pd.read_excel('Instance3.xlsx')
+    dfi = pd.read_excel('Instanceanor.xlsx')
     #dfi = pd.read_excel('InstanceValidation2.xlsx')
     
     if TestN > 0:
